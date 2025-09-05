@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orchard FED Assessment 2025</title>
+  <meta name="description"
+    content="Interactive gallery modal and cards with click capture, built per the Orchard FED 2025 brief." />
+</head>
+
+<body>
+  <!-- Skip to content for keyboard users -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <main id="main" role="main" class="main-wrapper">
+    <!-- Gallery Section -->
+    <div class="container">
+      <section id="gallery" class="photo-gallery" aria-labelledby="photo-gallery">
+        <div class="img-grid">
+        </div>
+        <article class="photo-gallery-desc">
+        </article>
+      </section>
+      <section id="galleryModal" class="gallery-modal" role="dialog" aria-modal="true" aria-hidden="true"
+        aria-labelledby="modal-for-gallery-image">
+        <img src="" alt="" />
+      </section>
+    </div>
+    <!-- Cards Section -->
+    <div class="container">
+      <section id="cards" class="taste-section" aria-labelledby="photo-cards">
+        <h1 class="card-grid-title text-white pb-30 border-bottom fs-30 fw-light text-uppercase"></h1>
+        <div class="card-grid text-white fs-21">
+        </div>
+      </section>
+    </div>
+    <!-- Entry point (JS/SCSS) -->
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

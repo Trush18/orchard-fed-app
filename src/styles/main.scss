@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'variables';
+@import 'utilities';
+@import 'gallery';
+@import 'cards';
+
+body {
+  font-family: system-ui,  OpenSans;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background: $white;
+  color: $black;
+}
+
+main {
+  background:$black ;
+  .container {
+    padding: 120px 0;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: $tablet) {
+  main {
+    .container {
+      padding: 10px;
+    }
+  }
+}

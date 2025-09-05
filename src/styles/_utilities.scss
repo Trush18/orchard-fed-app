@@ -1,0 +1,41 @@
+@import 'variables';
+
+.text-white {
+  color: $white;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.py-30 {
+  padding: 30px 0;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $white;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-21 {
+  font-size: 21px;
+}
+
+.fw-light {
+  font-weight: lighter;
+}
+
+.fw-bold {
+  font-weight: bold;
+}

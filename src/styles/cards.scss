@@ -1,0 +1,50 @@
+@import 'variables';
+
+.taste-section {
+  text-align: center;
+
+  .card-grid-title {
+    display: inline-block;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+
+    .card {
+      max-width: 350px;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .color-link {
+        padding-bottom: 10px;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm-mobile) {
+  .taste-section {
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (min-width: 521px) and (max-width: $tablet) {
+  .taste-section {
+    .card-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

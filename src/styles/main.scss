@@ -5,7 +5,7 @@
 @import 'cards';
 
 body {
-  font-family: system-ui,  OpenSans;
+  font-family: system-ui, OpenSans;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -14,16 +14,60 @@ body {
 }
 
 main {
-  background:$black ;
-  .container {
+  background: $black ;
+
+  section {
     padding: 120px 0;
     max-width: 1080px;
     margin: 0 auto;
   }
 }
+
+/* Skip link visibility */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  padding: 0.5rem 0.75rem;
+  background: $white;
+  color: $black;
+  border-radius: 4px;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.skip-link:focus-visible {
+  left: 1rem;
+  top: 1rem;
+  outline: 2px solid #5b9dd9;
+  outline-offset: 2px;
+}
+
+/* Visible focus for keyboard users (WCAG) */
+
+:focus-visible {
+  outline: 2px solid #5b9dd9;
+  outline-offset: 3px;
+}
+
+/* Utility to visually hide but keep for screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* lazy-load non-hero images for perfomance/SEO purpose */
+img[loading="lazy"] {
+  content-visibility: auto;
+}
+
 @media (max-width: $tablet) {
   main {
-    .container {
+    section {
       padding: 10px;
     }
   }
